@@ -19,9 +19,14 @@ export default {
                         transform: "rotate(360deg)",
                     },
                 },
+                run: {
+                    from: { transform: "translateX(0)" },
+                    to: { transform: "translateX(-100%)" },
+                },
             },
             animation: {
                 "reverse-spin": "reverse-spin 7s linear infinite",
+                running: "run 22s linear infinite",
             },
         },
     },

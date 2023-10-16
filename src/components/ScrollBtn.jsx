@@ -21,9 +21,9 @@ const ScrollBtn = ({ scrollSrc, href, isTop }) => {
                 <path
                     d="M1.0459 39.7873L12.0459 51.0693L23.0459 39.7873M12.0459 49.5024V1.06934"
                     stroke="#242F65"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                 />
             </svg>
         </a>
