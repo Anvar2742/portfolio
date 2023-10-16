@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ScrollBtn = ({ scrollSrc }) => {
     return (
-        <Link
-            to={"#work"}
-            className="relative w-52 h-52 flex items-center justify-center mx-auto"
+        <a
+            href={"#work"}
+            className="relative w-52 h-52 flex items-center justify-center mx-auto group"
         >
             <img
                 src={scrollSrc}
@@ -26,7 +25,7 @@ const ScrollBtn = ({ scrollSrc }) => {
                     stroke-linejoin="round"
                 />
             </svg>
-        </Link>
+        </a>
     );
 };
 
