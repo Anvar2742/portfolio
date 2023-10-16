@@ -27,7 +27,7 @@ const Home = () => {
                         </span>{" "}
                         years of experience
                     </p>
-                    <ScrollBtn scrollSrc={scrollHero} />
+                    <ScrollBtn scrollSrc={scrollHero} href="#work" />
                 </div>
             </section>
 
