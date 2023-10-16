@@ -4,29 +4,29 @@ const Navbar = () => {
     return (
         <header className="py-5" id="header">
             <div className="max-w-5xl mx-auto px-4 flex items-center justify-between">
-                <Link to={"/"}>Anvar M.</Link>
+                <Link to={"/"} className="text-3xl font-extrabold">Anvar M.</Link>
                 <nav>
                     <ul className="flex gap-4">
                         <li>
-                            <Link to={"/some"} className="">
+                            <a href="#header" className="">
                                 Home
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link to={"/some"} className="">
+                            <a href="#work" className="">
                                 Work
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link to={"/some"} className="">
+                            <a href="#contact" className="">
                                 Get in touch
-                            </Link>
+                            </a>
                         </li>
-                        <li>
-                            <Link to={"/some"} className="">
+                        {/* <li>
+                            <a href="#about" className="">
                                 About
-                            </Link>
-                        </li>
+                            </a>
+                        </li> */}
                     </ul>
                 </nav>
             </div>

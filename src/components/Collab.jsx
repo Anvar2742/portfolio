@@ -3,7 +3,7 @@ import collab from "./../assets/collab.jpg";
 
 const Collab = () => {
     return (
-        <section className="pt-28 pb-24">
+        <section className="pt-28 pb-24" id="contact">
             <div
                 style={{
                     "--collab-bg": `url(${collab})`,
@@ -34,9 +34,9 @@ const Collab = () => {
                         <path
                             d="M11.6441 10.906L11.7551 1.14883L2.00151 1.43673M10.6572 2.26684L1.2451 11.8512"
                             stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                         />
                     </svg>
                 </a>

@@ -34,6 +34,19 @@ const Home = () => {
 
             <Work />
 
+            <div className="flex gap-1 mt-10 overflow-hidden">
+                <p className=" text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
+                    Available for Work | Get in Touch | Available for Work | Get
+                    in Touch | Available for Work | Get in Touch | Available for
+                    Work | Get in Touch |
+                </p>
+                <p className=" text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
+                    Available for Work | Get in Touch | Available for Work | Get
+                    in Touch | Available for Work | Get in Touch | Available for
+                    Work | Get in Touch |
+                </p>
+            </div>
+
             <Collab />
         </>
     );
