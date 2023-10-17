@@ -1,8 +1,11 @@
 import React from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 const Work = () => {
+    const { scroll } = useLocomotiveScroll();
+
     return (
-        <section className="pt-28 pb-24" id="work">
+        <section data-scroll-section className="pt-28 pb-24" id="work">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className="text-center text-xl uppercase font-bold mb-24">
                     work
@@ -71,7 +74,7 @@ const Work = () => {
                         </div>
                         <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
                     </article>
-                    
+
                     <article className="relative rounded-3xl bg-[#EDF0F9] px-16 flex justify-between items-end gap-11 overflow-hidden">
                         <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
                         <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-20">

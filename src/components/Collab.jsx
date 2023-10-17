@@ -9,6 +9,7 @@ const Collab = () => {
                     "--collab-bg": `url(${collab})`,
                 }}
                 className="max-w-5xl mx-auto px-4 bg-[image:var(--collab-bg)] bg-cover bg-no-repeat bg-center text-center py-20 rounded-3xl"
+                data-scroll-section
             >
                 <h2 className=" text-4xl font-semibold font-serif">
                     Have A Project In Mind? Let's Start.

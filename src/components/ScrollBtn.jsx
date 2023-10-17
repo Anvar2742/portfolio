@@ -1,10 +1,11 @@
 import React from "react";
 
-const ScrollBtn = ({ scrollSrc, href, isTop }) => {
+const ScrollBtn = ({ scrollSrc, href, isTop, scrollTo }) => {
     return (
         <a
             href={href}
-            className="relative w-52 h-52 flex items-center justify-center mx-auto group"
+            className="relative w-52 h-52 flex items-center justify-center mx-auto group pointer-events-none select-none"
+            onClick={(e) => scrollTo(e, href)}
         >
             <img
                 src={scrollSrc}
