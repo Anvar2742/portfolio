@@ -71,9 +71,10 @@ const Work = () => {
                         </div>
                         <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
                     </article>
-                    <article className="relative rounded-3xl bg-[#EDF0F9] pl-16 flex justify-between gap-11 overflow-hidden">
+                    
+                    <article className="relative rounded-3xl bg-[#EDF0F9] px-16 flex justify-between items-end gap-11 overflow-hidden">
                         <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
-                        <div className="h-full w-[47%] flex flex-col justify-center gap-6 pt-24 pb-20 z-20">
+                        <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-20">
                             <h3 className="font-serif text-4xl font-semibold">
                                 WooCommerce development Booriva
                             </h3>
@@ -91,11 +92,11 @@ const Work = () => {
                                 when looking at its layout.
                             </p>
                         </div>
-                        <div className="flex absolute z-10 right-0 w-1/2 h-full">
+                        <div className="flex z-10 w-1/2">
                             <img
                                 src="./work/theworldmag.png"
                                 alt=""
-                                className=" -ml-14"
+                                className="w-full scale-125 -ml-4"
                             />
                         </div>
                         <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
