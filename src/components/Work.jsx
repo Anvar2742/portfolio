@@ -1,164 +1,39 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
+import works from "./../work.json";
 
 const Work = () => {
-    // const skewRef = useRef(null);
-    // gsap.registerPlugin(ScrollTrigger);
-
-    // useEffect(() => {
-    //     ScrollTrigger.create({
-    //         trigger: skewRef.current,
-    //         start: "top bottom",
-    //         end: "bottom top",
-    //         scrub: true,
-    //         onUpdate({ getVelocity }) {
-    //             gsap.fromTo(
-    //                 skewRef.current,
-    //                 {
-    //                     skewY: `${getVelocity() / 500}deg`,
-    //                 },
-    //                 {
-    //                     skewY: 0,
-    //                 }
-    //             );
-    //         },
-    //     });
-    // }, []);
-
     return (
         <section data-scroll-section className="pt-28 pb-24" id="work">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className="text-center text-xl uppercase font-bold mb-24 h2">
                     portfolio
                 </h2>
-                <div className="grid gap-32">
-                    <article className="relative rounded-3xl bg-[#EDF0F9] px-16 flex justify-between gap-11 overflow-hidden">
-                        <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
-                        <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-10">
-                            <h3 className="font-serif text-4xl font-semibold">
-                                Développement WooCommerce Booriva
-                            </h3>
-                            <div className="flex gap-4">
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    Layout
-                                </span>
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WooCommerce
-                                </span>
-                            </div>
-                            <ul className="ul pl-4">
-                                <li>Figma vers HTML/CSS/JS</li>
-                                <li>Intégration WooCommerce</li>
-                                <li>Personnalisation des plugins</li>
-                                <li>Création de widgets PHP</li>
-                            </ul>
-                        </div>
-                        <div className="flex w-1/2 pt-16 relative z-10">
-                            <img
-                                src="./work/booriva-1.png"
-                                alt=""
-                                className=" w-[70%]"
-                            />
-                            <img
-                                src="./work/booriva-phone.png"
-                                alt=""
-                                className="absolute right-0 w-[70%]"
-                            />
-                        </div>
-                        <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
-                    </article>
-                    <article className="relative rounded-3xl bg-[#EDF0F9] pl-16 flex justify-between gap-11 overflow-hidden">
-                        <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
-                        <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-10">
-                            <h3 className="font-serif text-4xl font-semibold">
-                                MrCharge site web d'une startup, blog
-                            </h3>
-                            <div className="flex gap-4">
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WordPress
-                                </span>
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WooCommerce
-                                </span>
-                            </div>
-                            <ul className="ul pl-4">
-                                <li>Figma vers HTML/CSS/JS</li>
-                                <li>
-                                    Intégration WordPress (ACF, YoastSeo etc.)
-                                </li>
-                                <li>Creation du blog</li>
-                                <li>Amélioration de performance</li>
-                            </ul>
-                        </div>
-                        <div className="flex w-1/2 relative z-10">
-                            <img
-                                src="./work/mrcharge.png"
-                                alt=""
-                                className=" scale-125 -ml-14"
-                            />
-                        </div>
-                        <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
-                    </article>
-
-                    <article className="relative rounded-3xl bg-[#EDF0F9] px-16 flex justify-between items-end gap-11 overflow-hidden">
-                        <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
-                        <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-20">
-                            <h3 className="font-serif text-4xl font-semibold">
-                                Améliorations pour TheWorldMag
-                            </h3>
-                            <div className="flex gap-4">
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    Bug fixes
-                                </span>
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WordPress
-                                </span>
-                            </div>
-                            <ul className="ul pl-4">
-                                <li>Ajout de fonctionnalités</li>
-                                <li>Amélioration de performance</li>
-                                <li>Corrections de bugs</li>
-                            </ul>
-                        </div>
-                        <div className="flex z-10 w-1/2">
-                            <img
-                                src="./work/theworldmag.png"
-                                alt=""
-                                className="w-full scale-125 -ml-4"
-                            />
-                        </div>
-                        <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
-                    </article>
-                    <article className="relative rounded-3xl bg-[#EDF0F9] px-16 flex justify-between items-end gap-11 overflow-hidden">
-                        <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
-                        <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-20">
-                            <h3 className="font-serif text-4xl font-semibold">
-                                Cukr - refonte de la plateforme d'actualités.
-                            </h3>
-                            <div className="flex gap-4">
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WordPress
-                                </span>
-                                <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    Design
-                                </span>
-                            </div>
-                            <ul className="ul pl-4">
-                                <li>Mise à jour UI/UX</li>
-                                <li>Amélioration de performance</li>
-                                <li>Corrections de bugs</li>
-                            </ul>
-                        </div>
-                        <div className="flex z-10 w-1/2">
-                            <img
-                                src="./work/cukr.png"
-                                alt=""
-                                className="w-full scale-125 -ml-4"
-                            />
-                        </div>
-                        <div className=" w-1/3 h-full bg-[#D9DEEE] absolute rounded-tl-[250px] right-0"></div>
-                    </article>
+                <div className="grid grid-cols-2 gap-x-8 gap-y-10">
+                    {works.map((work) => {
+                        return (
+                            <article
+                                key={work.id}
+                                className={`bg-[${work.primary_color}] py-16 px-14 cursor-pointer rounded-xl group`}
+                            >
+                                <figure
+                                    className={`rounded-2xl bg-[${work.sec_color}] pt-16 px-14 max-h-80 overflow-hidden`}
+                                >
+                                    <img
+                                        src={work.img}
+                                        alt="Booriva - eCommerce site web"
+                                        className=" shadow-2xl group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 ease-linear"
+                                    />
+                                </figure>
+                                <div>
+                                    <h3 className="font-serif text-4xl text-darkBlue mt-8">
+                                        {work.title}
+                                    </h3>
+                                </div>
+                            </article>
+                        );
+                    })}
                 </div>
             </div>
         </section>
