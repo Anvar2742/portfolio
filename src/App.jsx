@@ -5,15 +5,13 @@ import ScrollSmooth from "./components/ScrollSmooth";
 
 function App() {
     return (
-        <ScrollSmooth>
-            <BrowserRouter>
-                <Routes>
-                    <Route element={<MainLayout />}>
-                        <Route path="/" element={<Home />} />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </ScrollSmooth>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<MainLayout />}>
+                    <Route path="/" element={<Home />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
