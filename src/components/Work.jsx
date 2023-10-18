@@ -6,7 +6,7 @@ import works from "./../work.json";
 const Work = () => {
     return (
         <section data-scroll-section className="pt-28 pb-24" id="work">
-            <div className="max-w-5xl mx-auto px-4">
+            <div className="maxW-5xl mx-auto px-4">
                 <h2 className="text-center text-xl uppercase font-bold mb-24 h2">
                     portfolio
                 </h2>
@@ -27,7 +27,7 @@ const Work = () => {
                                     <img
                                         src={work.img}
                                         alt="Booriva - eCommerce site web"
-                                        className=" shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 ease-linear"
+                                        className=" shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 easeLinear"
                                     />
                                 </figure>
                                 <h3 className="font-serif text-2xl sm:text-4xl text-darkBlue mt-8 mb-6">

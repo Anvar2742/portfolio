@@ -14,7 +14,7 @@ const Home = () => {
                 }}
                 className=" pt-20 pb-16 sm:pt-28 sm:pb-24 mx-4 mb-16 sm:mb-40 bg-[image:var(--hero-bg)] bg-cover bg-no-repeat bg-center flex items-center justify-center flex-col rounded-3xl"
             >
-                <div className="max-w-5xl mx-auto px-4">
+                <div className="maxW-5xl mx-auto px-4">
                     <h1 className=" font-serif text-4xl sm:text-8xl text-darkBlue text-center">
                         Salut, c'est Anvar
                     </h1>

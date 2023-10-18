@@ -5,7 +5,7 @@ import CV from "./../assets/CV.pdf";
 const Collab = () => {
     return (
         <section className="pt-28 pb-24" id="contact">
-            <div className="max-w-5xl mx-auto px-4" data-scroll-section>
+            <div className="maxW-5xl mx-auto px-4" data-scroll-section>
                 <div
                     style={{
                         "--collab-bg": `url(${collab})`,

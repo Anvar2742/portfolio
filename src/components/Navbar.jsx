@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <header className="py-5" id="header" data-scroll-section>
-            <div className="max-w-5xl mx-auto px-6 xs:flex items-center justify-between gap-1">
+            <div className="maxW-5xl mx-auto px-6 xs:flex items-center justify-between gap-1">
                 <div className="flex items-center justify-between">
                     <Link to={"/"} className="text-3xl font-extrabold whitespace-nowrap">
                         Anvar M.
@@ -28,15 +28,15 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-github"
+                                className="icon icon-tabler icon-tabler-brand-github"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                stroke-width="2"
+                                strokeWidth="2"
                                 stroke="currentColor"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 className="group-hover:-translate-y-1 transition-transform"
                             >
                                 <path
@@ -54,15 +54,15 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-x"
+                                className="icon icon-tabler icon-tabler-brand-x"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                stroke-width="2"
+                                strokeWidth="2"
                                 stroke="currentColor"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 className="group-hover:-translate-y-1 transition-transform"
                             >
                                 <path
@@ -85,15 +85,15 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-github"
+                                className="icon icon-tabler icon-tabler-brand-github"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                stroke-width="2"
+                                strokeWidth="2"
                                 stroke="currentColor"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 className="group-hover:-translate-y-1 transition-transform"
                             >
                                 <path
@@ -111,15 +111,15 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-x"
+                                className="icon icon-tabler icon-tabler-brand-x"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                stroke-width="2"
+                                strokeWidth="2"
                                 stroke="currentColor"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 className="group-hover:-translate-y-1 transition-transform"
                             >
                                 <path
