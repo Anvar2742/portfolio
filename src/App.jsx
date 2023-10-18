@@ -4,15 +4,7 @@ import Home from "./pages/Home";
 import ScrollSmooth from "./components/ScrollSmooth";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
+    return <div className="underline text-5xl">this is a test!</div>;
 }
 
 export default App;
