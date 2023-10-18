@@ -4,7 +4,7 @@ import CV from "./../assets/CV.pdf";
 
 const Collab = () => {
     return (
-        <section className="pt-28 pb-24" id="contact">
+        <section className="pt-28 pb-24" id="cv">
             <div className="maxW-5xl mx-auto px-4" data-scroll-section>
                 <div
                     style={{
@@ -24,7 +24,7 @@ const Collab = () => {
                         target="_blank"
                         className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold"
                     >
-                        Ouvre le CV
+                        Ouvrir le CV
                         <svg
                             width="13"
                             height="13"

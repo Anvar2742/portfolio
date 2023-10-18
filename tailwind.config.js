@@ -31,6 +31,9 @@ export default {
             screens: {
                 xs: "460px",
             },
+            boxShadow: {
+                solid: "0px 5px 0px -1px rgba(0, 0, 0, .5)",
+            },
         },
     },
     plugins: [],

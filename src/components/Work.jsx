@@ -19,15 +19,15 @@ const Work = () => {
                                     "--work-color": work.primary_color,
                                     "--work-color-sec": work.sec_color,
                                 }}
-                                className={`bg-[var(--work-color)] py-8 sm:py-16 px-4 sm:px-14 cursor-pointer rounded-xl group`}
+                                className={`bg-[var(--work-color)] py-8 sm:py-16 px-4 sm:px-14 rounded-xl group`}
                             >
                                 <figure
                                     className={`rounded-2xl bg-[--work-color-sec] pt-8 sm:pt-16 px-6 sm:px-14 max-h-80 overflow-hidden`}
                                 >
                                     <img
                                         src={work.img}
-                                        alt="Booriva - eCommerce site web"
-                                        className=" shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 ease-linear"
+                                        alt={work.title}
+                                        className="shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 ease-linear"
                                     />
                                 </figure>
                                 <h3 className="font-serif text-2xl sm:text-4xl text-darkBlue mt-8 mb-6">
@@ -36,7 +36,7 @@ const Work = () => {
                                 <a
                                     href={work.link}
                                     target="_blank"
-                                    className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold"
+                                    className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold transition-all hover:-translate-y-1 hover:shadow-xl"
                                 >
                                     Check it out
                                     <svg

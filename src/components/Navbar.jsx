@@ -17,7 +17,10 @@ const Navbar = () => {
         <header className="py-5" id="header" data-scroll-section>
             <div className="maxW-5xl mx-auto px-6 xs:flex items-center justify-between gap-1">
                 <div className="flex items-center justify-between">
-                    <Link to={"/"} className="text-3xl font-extrabold whitespace-nowrap">
+                    <Link
+                        to={"/"}
+                        className="text-3xl font-extrabold whitespace-nowrap"
+                    >
                         Anvar M.
                     </Link>
                     <div className="flex xs:hidden gap-2">
@@ -28,7 +31,6 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="icon icon-tabler icon-tabler-brand-github"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -54,7 +56,6 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="icon icon-tabler icon-tabler-brand-x"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -85,7 +86,6 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="icon icon-tabler icon-tabler-brand-github"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -111,7 +111,6 @@ const Navbar = () => {
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="icon icon-tabler icon-tabler-brand-x"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -154,11 +153,11 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#contact"
+                                    href="#cv"
                                     className=""
-                                    onClick={(e) => scrollTo(e, "#contact")}
+                                    onClick={(e) => scrollTo(e, "#cv")}
                                 >
-                                    Get in touch
+                                    Mon CV
                                 </a>
                             </li>
                         </ul>
