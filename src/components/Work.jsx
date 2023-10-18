@@ -27,7 +27,7 @@ const Work = () => {
                                     <img
                                         src={work.img}
                                         alt="Booriva - eCommerce site web"
-                                        className=" shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 easeLinear"
+                                        className=" shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 ease-linear"
                                     />
                                 </figure>
                                 <h3 className="font-serif text-2xl sm:text-4xl text-darkBlue mt-8 mb-6">

@@ -39,7 +39,7 @@ const SmoothScroll = ({ children }) => {
             <div
                 // ref={(ref) => (this.fake = ref)}
                 style={{
-                    height: height,
+                    height,
                 }}
             />
         </>
