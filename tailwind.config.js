@@ -29,7 +29,7 @@ export default {
                 running: "run 15s linear infinite",
             },
             screens: {
-                xs: "450px",
+                xs: "460px",
             },
         },
     },
