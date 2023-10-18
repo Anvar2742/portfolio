@@ -12,33 +12,19 @@ const Home = () => {
                 style={{
                     "--hero-bg": `url(${heroBg})`,
                 }}
-                className="pt-28 pb-24 mx-4 mb-40 bg-[image:var(--hero-bg)] bg-cover bg-no-repeat bg-center flex items-center justify-center flex-col rounded-3xl"
+                className=" pt-20 pb-16 sm:pt-28 sm:pb-24 mx-4 mb-40 bg-[image:var(--hero-bg)] bg-cover bg-no-repeat bg-center flex items-center justify-center flex-col rounded-3xl"
             >
                 <div className="max-w-5xl mx-auto px-4">
-                    <h1
-                        className=" font-serif text-8xl text-darkBlue text-center opacity-0"
-                        data-scroll
-                        data-scroll-direction="horizontal"
-                        data-scroll-speed="-3"
-                        data-scroll-class="appear"
-                        data-scroll-repeat="true"
-                    >
+                    <h1 className=" font-serif text-4xl sm:text-8xl text-darkBlue text-center">
                         Salut, c'est Anvar
                     </h1>
-                    <p
-                        className=" text-5xl text-center mt-4 mb-20 leading-normal"
-                        data-scroll
-                        data-scroll-direction="horizontal"
-                        data-scroll-speed="3"
-                        data-scroll-class="appear"
-                        data-scroll-repeat="true"
-                    >
+                    <p className="sm:leading-normal text-xl sm:text-5xl text-center mt-4 mb-20">
                         Je suis un{" "}
                         <span className=" font-bold font-sans text-orange">
                             développeur frontend
                         </span>{" "}
                         <br /> avec{" "}
-                        <span className=" bg-darkBlue text-white py-2 px-4 rounded-full">
+                        <span className=" bg-darkBlue text-white py-1 sm:py-2 px-2 sm:px-4 rounded-full">
                             2+
                         </span>{" "}
                         ans d'expérience
@@ -49,15 +35,12 @@ const Home = () => {
 
             <Work />
 
-            <div
-                className="flex gap-1 mt-10 overflow-hidden"
-                data-scroll-section
-            >
-                <p className=" text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
+            <div className="flex gap-1 mt-10 overflow-hidden">
+                <p className="text-2xl sm:text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
                     Available for Work | Get in Touch | Available for Work | Get
                     in Touch |
                 </p>
-                <p className=" text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
+                <p className="text-2xl sm:text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
                     Available for Work | Get in Touch | Available for Work | Get
                     in Touch |
                 </p>

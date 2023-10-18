@@ -28,6 +28,9 @@ export default {
                 "reverse-spin": "reverse-spin 7s linear infinite",
                 running: "run 15s linear infinite",
             },
+            screens: {
+                xs: "450px",
+            },
         },
     },
     plugins: [],

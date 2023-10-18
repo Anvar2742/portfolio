@@ -4,27 +4,31 @@
         "img": "./../work/booriva_pc.png",
         "title": "Booriva - eCommerce creation",
         "primary_color": "#F5F3FF",
-        "sec_color": "#E0DBFF"
+        "sec_color": "#E0DBFF",
+        "link": "https://www.booriva.com/"
     },
     {
         "id": 2,
         "img": "./../work/mrcharge_pc.png",
         "title": "MrCharge wordpress blog",
         "primary_color": "#F5F3FF",
-        "sec_color": "#E0DBFF"
+        "sec_color": "#E0DBFF",
+        "link": "https://www.mrcharge.eu/"
     },
     {
         "id": 3,
         "img": "./../work/theworldmag_pc.png",
         "title": "TheWorldMag - magazine en ligne",
         "primary_color": "#F5F3FF",
-        "sec_color": "#E0DBFF"
+        "sec_color": "#E0DBFF",
+        "link": "https://www.theworldmag.com/"
     },
     {
         "id": 4,
         "img": "./../work/cukr_pc.png",
         "title": "Cukr - platforme d'actualites",
         "primary_color": "#F5F3FF",
-        "sec_color": "#E0DBFF"
+        "sec_color": "#E0DBFF",
+        "link": "https://www.cukr.city/"
     }
 ]
