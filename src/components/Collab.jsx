@@ -22,7 +22,7 @@ const Collab = () => {
                     <a
                         href={CV}
                         target="_blank"
-                        className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold"
+                        className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold  transition-all hover:-translate-y-1 hover:shadow-xl"
                     >
                         Ouvrir le CV
                         <svg

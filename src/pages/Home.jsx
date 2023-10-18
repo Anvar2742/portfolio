@@ -19,9 +19,9 @@ const Home = () => {
                         Salut, c'est Anvar
                     </h1>
                     <p className="sm:leading-normal text-xl sm:text-5xl text-center mt-4 mb-20">
-                        Je suis un{" "}
+                        Je suis{" "}
                         <span className=" font-bold font-sans text-orange">
-                            développeur frontend
+                            développeur fullstack
                         </span>{" "}
                         <br /> avec{" "}
                         <span className=" bg-darkBlue text-white py-1 sm:py-2 px-2 sm:px-4 rounded-full">

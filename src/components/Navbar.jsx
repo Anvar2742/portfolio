@@ -136,7 +136,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="#header"
-                                    className=""
+                                    className="hover:underline"
                                     onClick={(e) => scrollTo(e, "#header")}
                                 >
                                     Home
@@ -145,7 +145,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="#work"
-                                    className=""
+                                    className="hover:underline"
                                     onClick={(e) => scrollTo(e, "#work")}
                                 >
                                     Work
@@ -154,7 +154,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="#cv"
-                                    className=""
+                                    className="hover:underline"
                                     onClick={(e) => scrollTo(e, "#cv")}
                                 >
                                     Mon CV
