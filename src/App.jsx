@@ -1,17 +1,19 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Home from "./pages/Home";
+import ScrollSmooth from "./components/ScrollSmooth";
 
 function App() {
-
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <ScrollSmooth>
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<MainLayout />}>
+                        <Route path="/" element={<Home />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </ScrollSmooth>
     );
 }
 

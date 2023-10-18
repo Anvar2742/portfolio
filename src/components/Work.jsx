@@ -1,35 +1,58 @@
-import React from "react";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect, useRef } from "react";
 
 const Work = () => {
-    const { scroll } = useLocomotiveScroll();
+    // const skewRef = useRef(null);
+    // gsap.registerPlugin(ScrollTrigger);
+
+    // useEffect(() => {
+    //     ScrollTrigger.create({
+    //         trigger: skewRef.current,
+    //         start: "top bottom",
+    //         end: "bottom top",
+    //         scrub: true,
+    //         onUpdate({ getVelocity }) {
+    //             gsap.fromTo(
+    //                 skewRef.current,
+    //                 {
+    //                     skewY: `${getVelocity() / 500}deg`,
+    //                 },
+    //                 {
+    //                     skewY: 0,
+    //                 }
+    //             );
+    //         },
+    //     });
+    // }, []);
 
     return (
         <section data-scroll-section className="pt-28 pb-24" id="work">
             <div className="max-w-5xl mx-auto px-4">
-                <h2 className="text-center text-xl uppercase font-bold mb-24">
-                    work
+                <h2 className="text-center text-xl uppercase font-bold mb-24 h2">
+                    portfolio
                 </h2>
                 <div className="grid gap-32">
                     <article className="relative rounded-3xl bg-[#EDF0F9] px-16 flex justify-between gap-11 overflow-hidden">
                         <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
                         <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-10">
                             <h3 className="font-serif text-4xl font-semibold">
-                                WooCommerce development Booriva
+                                Développement WooCommerce Booriva
                             </h3>
                             <div className="flex gap-4">
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WordPress
+                                    Layout
                                 </span>
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
                                     WooCommerce
                                 </span>
                             </div>
-                            <p>
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout.
-                            </p>
+                            <ul className="ul pl-4">
+                                <li>Figma vers HTML/CSS/JS</li>
+                                <li>Intégration WooCommerce</li>
+                                <li>Personnalisation des plugins</li>
+                                <li>Création de widgets PHP</li>
+                            </ul>
                         </div>
                         <div className="flex w-1/2 pt-16 relative z-10">
                             <img
@@ -49,7 +72,7 @@ const Work = () => {
                         <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
                         <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-10">
                             <h3 className="font-serif text-4xl font-semibold">
-                                WooCommerce development Booriva
+                                MrCharge site web d'une startup, blog
                             </h3>
                             <div className="flex gap-4">
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
@@ -59,11 +82,14 @@ const Work = () => {
                                     WooCommerce
                                 </span>
                             </div>
-                            <p>
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout.
-                            </p>
+                            <ul className="ul pl-4">
+                                <li>Figma vers HTML/CSS/JS</li>
+                                <li>
+                                    Intégration WordPress (ACF, YoastSeo etc.)
+                                </li>
+                                <li>Creation du blog</li>
+                                <li>Amélioration de performance</li>
+                            </ul>
                         </div>
                         <div className="flex w-1/2 relative z-10">
                             <img
@@ -79,21 +105,21 @@ const Work = () => {
                         <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
                         <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-20">
                             <h3 className="font-serif text-4xl font-semibold">
-                                WooCommerce development Booriva
+                                Améliorations pour TheWorldMag
                             </h3>
                             <div className="flex gap-4">
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WordPress
+                                    Bug fixes
                                 </span>
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WooCommerce
+                                    WordPress
                                 </span>
                             </div>
-                            <p>
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout.
-                            </p>
+                            <ul className="ul pl-4">
+                                <li>Ajout de fonctionnalités</li>
+                                <li>Amélioration de performance</li>
+                                <li>Corrections de bugs</li>
+                            </ul>
                         </div>
                         <div className="flex z-10 w-1/2">
                             <img
@@ -108,21 +134,21 @@ const Work = () => {
                         <div className=" w-40 h-40 bg-[#D9DEEE] absolute rounded-br-full -left-3 -top-3"></div>
                         <div className="h-full w-1/2 flex flex-col justify-center gap-6 pt-24 pb-20 z-20">
                             <h3 className="font-serif text-4xl font-semibold">
-                                WooCommerce development Booriva
+                                Cukr - refonte de la plateforme d'actualités.
                             </h3>
                             <div className="flex gap-4">
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
                                     WordPress
                                 </span>
                                 <span className=" text-lg text-[#6878AC] font-semibold bg-[#D9DEEE] py-2 px-3 rounded-xl select-none">
-                                    WooCommerce
+                                    Design
                                 </span>
                             </div>
-                            <p>
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout.
-                            </p>
+                            <ul className="ul pl-4">
+                                <li>Mise à jour UI/UX</li>
+                                <li>Amélioration de performance</li>
+                                <li>Corrections de bugs</li>
+                            </ul>
                         </div>
                         <div className="flex z-10 w-1/2">
                             <img

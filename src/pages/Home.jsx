@@ -23,7 +23,7 @@ const Home = () => {
                         data-scroll-class="appear"
                         data-scroll-repeat="true"
                     >
-                        Hi, I'm Anvar
+                        Salut, c'est Anvar
                     </h1>
                     <p
                         className=" text-5xl text-center mt-4 mb-20 leading-normal"
@@ -33,15 +33,15 @@ const Home = () => {
                         data-scroll-class="appear"
                         data-scroll-repeat="true"
                     >
-                        a{" "}
+                        Je suis un{" "}
                         <span className=" font-bold font-sans text-orange">
-                            Web developer
+                            développeur frontend
                         </span>{" "}
-                        <br /> with{" "}
+                        <br /> avec{" "}
                         <span className=" bg-darkBlue text-white py-2 px-4 rounded-full">
                             2+
                         </span>{" "}
-                        years of experience
+                        ans d'expérience
                     </p>
                     <ScrollBtn scrollSrc={scrollHero} href="#work" />
                 </div>

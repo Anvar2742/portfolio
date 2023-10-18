@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
+import { gsap, Power4 } from "gsap";
 
 const Navbar = () => {
+    const scrollTo = (href) => {
+        gsap.to(href, {
+            duration: 1,
+            y: -window.scrollY,
+            ease: Power4.easeOut,
+        });
+    };
     return (
         <header className="py-5" id="header" data-scroll-section>
             <div className="max-w-5xl mx-auto px-4 flex items-center justify-between">
