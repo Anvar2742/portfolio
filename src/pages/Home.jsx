@@ -1,4 +1,5 @@
 import Collab from "../components/Collab";
+import Contact from "../components/Contact";
 import ScrollBtn from "../components/ScrollBtn";
 import Work from "../components/Work";
 import heroBg from "./../assets/hero-bg.png";
@@ -47,6 +48,8 @@ const Home = () => {
             </div>
 
             <Collab />
+
+            <Contact />
         </>
     );
 };
