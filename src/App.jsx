@@ -6,7 +6,7 @@ import ScrollSmooth from "./components/ScrollSmooth";
 function App() {
     return (
         <ScrollSmooth>
-            <BrowserRouter basename="/portfolio">
+            <BrowserRouter>
                 <Routes>
                     <Route element={<MainLayout />}>
                         <Route path="/" element={<Home />} />
