@@ -10,7 +10,7 @@ const Footer = () => {
             style={{
                 "--footer-bg": `url(${footerBg})`,
             }}
-            className="pt-28 pb-24 mt-40 bg-[image:var(--footer-bg)] bg-cover bg-no-repeat bg-center overflow-hidden relative text-white"
+            className="pt-28 pb-24 bg-[image:var(--footer-bg)] bg-cover bg-no-repeat bg-center overflow-hidden relative text-white"
         >
             <div className="maxW-5xl mx-auto px-4">
                 <ScrollBtn scrollSrc={toTop} href="#header" isTop={true} />
