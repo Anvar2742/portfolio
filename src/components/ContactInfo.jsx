@@ -2,7 +2,7 @@ const ContactInfo = () => {
     return (
         <div className=" max-w-xs bg-customBlack rounded-xl mx-auto py-8 px-10">
             <h3 className="text-3xl font-serif mb-5 text-white capitalize text-center">
-                coordones
+                Coordonnés
             </h3>
             <a
                 href="mailto:anvarmusa12@gmail.com"
