@@ -1,6 +1,5 @@
 import React from "react";
 import collab from "./../assets/collab.jpg";
-import CV from "./../assets/CV.pdf";
 
 const Collab = () => {
     return (
@@ -20,7 +19,7 @@ const Collab = () => {
                         compétences
                     </p> */}
                     <a
-                        href={CV}
+                        href="./CV.pdf"
                         target="_blank"
                         className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold  transition-all hover:-translate-y-1 hover:shadow-xl"
                     >
