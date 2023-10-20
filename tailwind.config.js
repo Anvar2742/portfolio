@@ -8,6 +8,8 @@ export default {
                 darkBlue: "#242F65",
                 darkGray: "#525665",
                 lightBlue: "#7390F9",
+                customBlack: "#2A2C32",
+                lightGray: "#A1A1A1",
             },
             fontFamily: {
                 serif: "Fraunces, serif",
