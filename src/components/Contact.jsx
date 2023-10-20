@@ -67,7 +67,7 @@ const Contact = () => {
         <section className=" pt-28 pb-36">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className=" text-4xl font-semibold font-serif mb-7 text-center">
-                    Contactezmoi
+                    Contactez-moi
                 </h2>
                 {isSent ? (
                     <div className="max-w-xs mx-auto shadow-center rounded-2xl py-10 px-8">
