@@ -64,7 +64,7 @@ const Contact = () => {
     };
 
     return (
-        <section className=" pt-28 pb-36">
+        <section className=" pt-28 pb-36" id="contact">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className=" text-4xl font-semibold font-serif mb-7 text-center">
                     Contactez-moi
