@@ -35,6 +35,7 @@ export default {
             },
             boxShadow: {
                 solid: "0px 5px 0px -1px rgba(0, 0, 0, .5)",
+                center: "0 10px 50px -12px rgb(0 0 0 / 0.25)",
             },
         },
     },
