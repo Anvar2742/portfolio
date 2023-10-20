@@ -1,6 +1,5 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
     const initialForm = {
@@ -68,7 +67,7 @@ const Contact = () => {
         <section className=" pt-28 pb-36">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className=" text-4xl font-semibold font-serif mb-7 text-center">
-                    Contactez-moi
+                    Contactezmoi
                 </h2>
                 {isSent ? (
                     <div className="max-w-xs mx-auto shadow-center rounded-2xl py-10 px-8">
@@ -79,7 +78,7 @@ const Contact = () => {
                 ) : (
                     <form
                         ref={form}
-                        // onSubmit={sendEmail}
+                        onSubmit={sendEmail}
                         className={` max-w-xs mx-auto grid gap-4 relative`}
                     >
                         {isLoading ? (
@@ -187,10 +186,6 @@ const Contact = () => {
                         ) : (
                             ""
                         )}
-                        <ReCAPTCHA
-                            sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
-                            onChange={sendEmail}
-                        />
                         <button
                             type="submit"
                             className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold  transition-all hover:-translate-y-1 hover:shadow-xl"
