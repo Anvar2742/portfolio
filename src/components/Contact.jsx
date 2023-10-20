@@ -50,11 +50,11 @@ const Contact = () => {
             )
             .then(
                 (result) => {
-                    // console.log(result.text);
+                    console.log(result.text);
                     setIsSent(true);
                 },
                 (error) => {
-                    // console.log(error.text);
+                    console.log(error.text);
                     setGeneralErr("Une erreur est survenue");
                 }
             )
