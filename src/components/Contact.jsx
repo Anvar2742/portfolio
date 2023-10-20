@@ -13,6 +13,11 @@ const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isSent, setIsSent] = useState(false);
     const form = useRef();
+    console.log(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        import.meta.env.VITE_PUBLIC_KEY
+    );
 
     const handleChange = (e) => {
         setFormErrors(initialForm);
