@@ -52,7 +52,6 @@ const Home = () => {
 
             <About />
             <Skills />
-            <ContactInfo />
             <Contact />
         </>
     );

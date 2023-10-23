@@ -26,13 +26,16 @@
             src="https://www.googletagmanager.com/gtag/js?id=G-69LCL4B4VH"
         ></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+            var host = window.location.hostname;
+            if (host === "anvarweb") {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag("js", new Date());
 
-            gtag("config", "G-69LCL4B4VH");
+                gtag("config", "G-69LCL4B4VH");
+            }
         </script>
     </head>
     <body>
