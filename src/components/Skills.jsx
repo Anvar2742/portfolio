@@ -1,12 +1,14 @@
 import skills from "./../skills.json";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
+import SkillCards from "./SkillCards";
 
 const Skills = () => {
     gsap.registerPlugin(ScrollTrigger);
     const skillWrap = useRef();
     const skillIcons = useRef();
+
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             ScrollTrigger.create({
@@ -52,31 +54,7 @@ const Skills = () => {
                             );
                         })}
                     </div>
-                    <div className="grid gap-10 px-5">
-                        {skills.skills_cards.map((skill, i) => {
-                            return (
-                                <div
-                                    key={skill.id}
-                                    className={`cursor-pointer select-none before:bg-c-gray-200 relative p-6 before:border-2 before:border-c-gray-400 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:transition-transform before:origin-center ${
-                                        i % 2 === 0
-                                            ? "before:rotate-2 before:translate-y-2"
-                                            : "before:-rotate-2"
-                                    }
-                                    hover:before:rotate-0 hover:before:translate-y-0`}
-                                >
-                                    <p className="text-xl font-bold opacity-70 z-10 relative">
-                                        {i + 1}
-                                    </p>
-                                    <h3 className=" text-2xl font-bold z-10 relative">
-                                        {skill.title}
-                                    </h3>
-                                    <p className="text-sm mt-2 z-10 relative">
-                                        {skill.subtitle}
-                                    </p>
-                                </div>
-                            );
-                        })}
-                    </div>
+                    <SkillCards />
                 </div>
             </div>
         </section>

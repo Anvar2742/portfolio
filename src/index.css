@@ -10,6 +10,10 @@
     .pause {
         animation-play-state: paused;
     }
+
+    .skill-card-active:before {
+        transform: none;
+    }
 }
 
 .viewport {
