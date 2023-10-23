@@ -153,11 +153,11 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#cv"
+                                    href="#about"
                                     className="hover:underline"
-                                    onClick={(e) => scrollTo(e, "#cv")}
+                                    onClick={(e) => scrollTo(e, "#about")}
                                 >
-                                    Mon CV
+                                    À propos
                                 </a>
                             </li>
                         </ul>
