@@ -27,7 +27,7 @@ const SkillCards = () => {
 
                 return (
                     <div
-                        key={skill.id}
+                        key={i}
                         ref={skillRef}
                         className={`skill-card cursor-pointer select-none before:bg-c-gray-200 relative p-6 before:border-2 before:border-c-gray-400 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:transition-transform before:origin-center ${
                             isActive

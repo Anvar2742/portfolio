@@ -36,7 +36,7 @@ const Skills = () => {
                         {skills.skills_icons.map((icon, i) => {
                             return (
                                 <div
-                                    key={icon.id}
+                                    key={i}
                                     className={`w-18 h-18 flex items-center justify-center ${
                                         i > 5
                                             ? " translate-x-3"

@@ -1,71 +1,70 @@
 {
     "skills_icons": [
         {
-            "id": 1,
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+            "alt": "MongoDB logo"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
             "alt": ""
         },
         {
-            "id": 2,
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            "alt": "React logo"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+            "alt": "NodeJS logo"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+            "alt": ""
+        },
+        {
             "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "alt": ""
+            "alt": "JS logo"
         },
         {
-            "id": 3,
             "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-            "alt": ""
+            "alt": "HTML5 logo"
         },
         {
-            "id": 4,
             "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-            "alt": ""
+            "alt": "CSS3 logo"
         },
         {
-            "id": 5,
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-            "alt": ""
-        },
-        {
-            "id": 6,
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "alt": ""
-        },
-        {
-            "id": 7,
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "alt": ""
-        },
-        {
-            "id": 8,
             "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
             "alt": ""
         },
         {
-            "id": 9,
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+            "alt": "PHP logo"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+            "alt": ""
+        },
+        {
             "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
             "alt": ""
         }
     ],
     "skills_cards": [
         {
-            "id": 1,
-            "title": "Wordpress site creation",
-            "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima delectus, enim praesentium, odit nobis obcaecati"
+            "title": "Création de thème Wordpress",
+            "subtitle": "Mise en place de thèmes Wordpress personnalisés pour des sites Web uniques et attrayants"
         },
         {
-            "id": 2,
-            "title": "Online shop from scratch",
-            "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima delectus, enim praesentium, odit nobis obcaecati"
+            "title": "Boutique en ligne à partir de zéro",
+            "subtitle": "Création d'une boutique en ligne complète, de la conception initiale à la mise en ligne, en passant par la gestion des produits et des paiements"
         },
         {
-            "id": 3,
-            "title": "Figma to code",
-            "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima delectus, enim praesentium, odit nobis obcaecati"
+            "title": "Modèle Figma en code",
+            "subtitle": "Conversion de designs Figma en code fonctionnel pour donner vie à des interfaces utilisateur interactives et conviviales"
         },
         {
-            "id": 4,
-            "title": "FullStack web app",
-            "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima delectus, enim praesentium, odit nobis obcaecati"
+            "title": "Application Web FullStack",
+            "subtitle": "Développement complet d'applications Web, de la création du frontend à la gestion du backend pour des solutions Web puissantes et polyvalentes"
         }
     ]
 }
