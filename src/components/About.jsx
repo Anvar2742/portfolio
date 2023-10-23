@@ -10,7 +10,10 @@ const About = () => {
                 <div className="flex flex-col sm:flex-row gap-14 sm:max-h-96">
                     <div className="w-3/5">
                         <p className="text-lg mb-7">
-                            Je suis un développeur Web fullstack avec <span className="bg-darkBlue text-white rounded-full px-2 inline-block">plus de 2 ans</span>
+                            Je suis un développeur web fullstack avec{" "}
+                            <span className="bg-darkBlue text-white rounded-full px-2 inline-block">
+                                plus de 2 ans
+                            </span>
                             d'expérience pratique. Je possède une solide
                             compréhension des principes de développement web,
                             utilisant un large éventail de technologies, de
