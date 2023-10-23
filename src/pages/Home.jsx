@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Collab from "../components/Collab";
 import Contact from "../components/Contact";
 import ContactInfo from "../components/ContactInfo";
@@ -47,6 +48,9 @@ const Home = () => {
                     in Touch |
                 </p>
             </div>
+
+            <About />
+            {/* skills section */}
 
             <Collab />
             <ContactInfo />
