@@ -10,7 +10,8 @@ const Skills = () => {
     const skillIcons = useRef();
 
     useLayoutEffect(() => {
-        const ctx = gsap.context(() => {
+        let mm = gsap.matchMedia(skillWrap.current);
+        mm.add("(min-width: 640px)", () => {
             ScrollTrigger.create({
                 trigger: "#skillWrap",
                 start: "top 30%",
@@ -18,8 +19,8 @@ const Skills = () => {
                 pin: ".c-sticky",
                 // markers: true,
             });
-        }, skillWrap);
-        return () => ctx.revert();
+        });
+        return () => mm.revert();
     }, []);
 
     return (
@@ -28,9 +29,12 @@ const Skills = () => {
                 <h2 className="text-center text-xl uppercase font-bold mb-14 sm:mb-24 h2">
                     Competences
                 </h2>
-                <div className="grid grid-cols-2 items-start" id="skillWrap">
+                <div
+                    className="grid sm:grid-cols-2 gap-y-20 smgap-4 items-start"
+                    id="skillWrap"
+                >
                     <div
-                        className="relative w-full grid grid-cols-3 auto-rows-min gap-10 c-sticky"
+                        className="relative w-full grid xs:grid-cols-3 grid-cols-2 auto-rows-min gap-10 c-sticky pl-6 sm:pl-0 pr-2 xs:pr-0"
                         ref={skillIcons}
                     >
                         {skills.skills_icons.map((icon, i) => {
@@ -39,10 +43,10 @@ const Skills = () => {
                                     key={i}
                                     className={`w-18 h-18 flex items-center justify-center ${
                                         i > 5
-                                            ? " translate-x-3"
+                                            ? " sm:translate-x-3 translate-x-6"
                                             : i > 2
                                             ? ""
-                                            : " translate-x-6"
+                                            : " sm:translate-x-6 translate-x-10"
                                     }`}
                                 >
                                     <img

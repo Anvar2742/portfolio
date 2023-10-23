@@ -7,8 +7,8 @@ const About = () => {
                 <h2 className="text-center text-xl uppercase font-bold mb-14 sm:mb-24 h2">
                     À propos
                 </h2>
-                <div className="flex flex-col sm:flex-row gap-14 sm:max-h-96">
-                    <div className="w-3/5">
+                <div className="flex flex-col sm:flex-row gap-14">
+                    <div className="sm:w-3/5">
                         <p className="text-lg mb-7">
                             Je suis un développeur web fullstack avec{" "}
                             <span className="bg-darkBlue text-white rounded-full px-2 inline-block">
@@ -49,7 +49,7 @@ const About = () => {
                             </svg>
                         </a>
                     </div>
-                    <div className=" rounded-3xl overflow-hidden w-2/5">
+                    <div className=" rounded-3xl overflow-hidden sm:w-2/5">
                         <img
                             src="./../ava_g.jpg"
                             alt=""
