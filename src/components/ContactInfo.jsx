@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 const ContactInfo = () => {
+    const { i18n, t } = useTranslation();
     return (
         <div className="py-8 px-10">
             <h3 className="text-3xl font-serif mb-5 text-white capitalize">
-                Coordonnés
+                {t("home.footer.contact_title")}
             </h3>
             <ul>
                 <li>

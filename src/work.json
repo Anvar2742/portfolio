@@ -3,6 +3,7 @@
         "id": 1,
         "img": "./work/booriva_pc.webp",
         "title": "Booriva - eCommerce creation",
+        "title_en": "Booriva - eCommerce website",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
         "link": "https://www.booriva.com/"
@@ -11,6 +12,7 @@
         "id": 2,
         "img": "./work/mrcharge_pc.webp",
         "title": "MrCharge wordpress blog",
+        "title_en": "MrCharge wordpress blog",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
         "link": "https://www.mrcharge.eu/"
@@ -19,6 +21,7 @@
         "id": 3,
         "img": "./work/theworldmag_pc.webp",
         "title": "TheWorldMag - magazine en ligne",
+        "title_en": "TheWorldMag - online magazine",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
         "link": "https://www.theworldmag.com/"
@@ -27,6 +30,7 @@
         "id": 4,
         "img": "./work/cukr_pc.webp",
         "title": "Cukr - platforme d'actualites",
+        "title_en": "Cukr - news platform",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
         "link": "https://www.cukr.city/"

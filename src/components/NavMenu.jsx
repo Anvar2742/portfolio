@@ -1,7 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const NavMenu = () => {
+    const { i18n, t } = useTranslation();
     gsap.registerPlugin(ScrollToPlugin);
     const scrollTo = (e, href) => {
         e.preventDefault();
@@ -20,7 +22,7 @@ const NavMenu = () => {
                         className="hover:underline"
                         onClick={(e) => scrollTo(e, "#header")}
                     >
-                        Home
+                        {t("main_nav.home")}
                     </a>
                 </li>
                 <li>
@@ -29,7 +31,7 @@ const NavMenu = () => {
                         className="hover:underline"
                         onClick={(e) => scrollTo(e, "#work")}
                     >
-                        Work
+                        {t("main_nav.work")}
                     </a>
                 </li>
                 <li>
@@ -38,7 +40,7 @@ const NavMenu = () => {
                         className="hover:underline"
                         onClick={(e) => scrollTo(e, "#about")}
                     >
-                        À propos
+                        {t("main_nav.about")}
                     </a>
                 </li>
             </ul>

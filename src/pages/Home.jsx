@@ -22,18 +22,18 @@ const Home = () => {
             >
                 <div className="maxW-5xl mx-auto px-4">
                     <h1 className=" font-serif text-4xl sm:text-8xl text-darkBlue text-center">
-                        {t("title")}
+                        {t("home.title")}
                     </h1>
                     <p className="sm:leading-normal text-xl sm:text-5xl text-center mt-4 mb-20">
-                        Je suis{" "}
+                        {t("home.subtitle.ima") + " "}
                         <span className=" font-bold font-sans text-orange">
-                            développeur fullstack
+                            {t("home.subtitle.devFS")}
                         </span>{" "}
-                        <br /> avec{" "}
+                        <br /> {t("home.subtitle.with") + " "}
                         <span className=" bg-darkBlue text-white py-1 sm:py-2 px-2 sm:px-4 rounded-full">
                             2+
                         </span>{" "}
-                        ans d'expérience
+                        {t("home.subtitle.YoE")}
                     </p>
                     <ScrollBtn scrollSrc={scrollHero} href="#work" />
                 </div>

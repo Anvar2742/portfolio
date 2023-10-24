@@ -3,8 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
 import SkillCards from "./SkillCards";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+    const { i18n, t } = useTranslation();
     gsap.registerPlugin(ScrollTrigger);
     const skillWrap = useRef();
     const skillIcons = useRef();
@@ -27,7 +29,7 @@ const Skills = () => {
         <section className="pt-28 pb-24 mb-16" id="skills" ref={skillWrap}>
             <div className="max-w-5xl mx-auto px-4" data-scroll-section>
                 <h2 className="text-center text-xl uppercase font-bold mb-14 sm:mb-24 h2">
-                    COMPÉTENCES
+                    {t("home.skills.title")}
                 </h2>
                 <div
                     className="grid sm:grid-cols-2 gap-y-20 smgap-4 items-start"

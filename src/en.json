@@ -1,0 +1,42 @@
+{
+    "main_nav": {
+        "home": "Home",
+        "work": "My work",
+        "about": "About"
+    },
+    "home": {
+        "title": "Hi, I'm Anvar",
+        "subtitle": {
+            "ima": "I'm a",
+            "devFS": "fullstack developer",
+            "with": "with",
+            "YoE": "years of experience"
+        },
+        "about": {
+            "title": "About",
+            "jesdfsavec": "I'm a fullstack web developer with",
+            "pl2ans": "more than 2 years",
+            "1p": "of practical experience. I have a solid understanding of web development principles, using a wide range of technologies, frameworks and programming tools to create user-friendly and responsive websites.",
+            "2p": "With experience in delivering high-quality projects, I am proficient in UI/UX design, client-side technologies such as HTML, CSS and JavaScript, as well as server-side technologies such as Node.js and PHP."
+        },
+        "skills": {
+            "title": "My skills"
+        },
+        "contact": {
+            "title": "Contact me",
+            "required_input": "This field is required",
+            "general_err": "An error occured",
+            "msg_sent": "I've received your message, thank you!",
+            "name": "Your name",
+            "email": "Your email",
+            "msg": "Your message",
+            "send": "Send"
+        },
+        "footer": {
+            "contact_title": "Contact information",
+            "copy_text": "I'd be happy to chat with you. Drop me a line!",
+            "copy_btn": "Copy my email",
+            "copied_txt": "Copied!"
+        }
+    }
+}

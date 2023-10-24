@@ -1,9 +1,8 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import works from "./../work.json";
 
 const Work = () => {
+    const { i18n, t } = useTranslation();
     return (
         <section data-scroll-section className="pt-28 pb-24" id="work">
             <div className="maxW-5xl mx-auto px-4">
@@ -12,6 +11,8 @@ const Work = () => {
                 </h2>
                 <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-10">
                     {works.map((work) => {
+                        const title =
+                            i18n.language === "fr" ? work.title : work.title_en;
                         return (
                             <article
                                 key={work.id}
@@ -26,12 +27,12 @@ const Work = () => {
                                 >
                                     <img
                                         src={work.img}
-                                        alt={work.title}
+                                        alt={title}
                                         className="shadow-2xl group-hover:-translate-y-[calc(100%-250px)] sm:group-hover:-translate-y-[calc(100%-200px)] transition-transform group-hover:duration-[4s] duration-500 ease-linear"
                                     />
                                 </figure>
                                 <h3 className="font-serif text-2xl sm:text-4xl text-darkBlue mt-8 mb-6">
-                                    {work.title}
+                                    {title}
                                 </h3>
                                 <a
                                     href={work.link}

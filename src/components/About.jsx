@@ -1,30 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const { i18n, t } = useTranslation();
     return (
         <section className="pt-28 pb-24 bg-grayBlue mb-16" id="about">
             <div className="max-w-5xl mx-auto px-4" data-scroll-section>
                 <h2 className="text-center text-xl uppercase font-bold mb-14 sm:mb-24 h2">
-                    À propos
+                    {t("home.about.title")}
                 </h2>
                 <div className="flex flex-col sm:flex-row gap-14">
                     <div className="sm:w-3/5">
                         <p className="text-lg mb-7">
-                            Je suis un développeur web fullstack avec{" "}
+                            {t("home.about.jesdfsavec") + " "}
                             <span className="bg-darkBlue text-white rounded-full px-2 inline-block">
-                                plus de 2 ans
+                                {t("home.about.pl2ans")}
                             </span>
-                            d'expérience pratique. Je possède une solide
-                            compréhension des principes de développement web,
-                            utilisant un large éventail de technologies, de
-                            frameworks et d'outils de programmation pour créer
-                            des sites web conviviaux et réactifs.
+                            {" " + t("home.about.1p")}
                             <br /> <br />
-                            Fort d'une expérience dans la réalisation de projets
-                            de haute qualité, je maîtrise la conception UI/UX,
-                            les technologies côté client telles que HTML, CSS et
-                            JavaScript, ainsi que les technologies côté serveur
-                            telles que Node.js et PHP.
+                            {t("home.about.2p")}
                         </p>
                         <a
                             href="./CV.pdf"

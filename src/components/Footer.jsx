@@ -3,8 +3,10 @@ import ScrollBtn from "./ScrollBtn";
 import footerBg from "./../assets/footer.webp";
 import toTop from "./../assets/toTop.svg";
 import ContactInfo from "./ContactInfo";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const { i18n, t } = useTranslation();
     const [isCopied, setIsCopied] = useState();
     const handleCopy = () => {
         navigator.clipboard.writeText("anvarmusa12@gmail.com");
@@ -27,7 +29,7 @@ const Footer = () => {
                     <ContactInfo />
                     <div className="flex flex-col sm:flex-row gap-5 p-5 items-center bg-white rounded-xl">
                         <p className="font-serif">
-                            Je serais ravi de discuter de ma candidature
+                            {t("home.footer.copy_text")}
                         </p>
                         <button
                             onClick={handleCopy}
@@ -53,7 +55,9 @@ const Footer = () => {
                                 <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"></path>
                                 <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
                             </svg>
-                            {isCopied ? "C'est fait!" : "Copier Email"}
+                            {isCopied
+                                ? t("home.footer.copy_btn")
+                                : t("home.footer.copy_btn")}
                         </button>
                     </div>
                 </div>

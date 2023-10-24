@@ -49,22 +49,42 @@
             "alt": ""
         }
     ],
-    "skills_cards": [
-        {
-            "title": "Création de thème Wordpress",
-            "subtitle": "Mise en place de thèmes Wordpress personnalisés pour des sites Web uniques et attrayants"
-        },
-        {
-            "title": "Boutique en ligne à partir de zéro",
-            "subtitle": "Création d'une boutique en ligne complète, de la conception initiale à la mise en ligne, en passant par la gestion des produits et des paiements"
-        },
-        {
-            "title": "Modèle Figma en code",
-            "subtitle": "Conversion de designs Figma en code fonctionnel pour donner vie à des interfaces utilisateur interactives et conviviales"
-        },
-        {
-            "title": "Application Web FullStack - MERN",
-            "subtitle": "Développement complet d'applications Web, de la création du frontend à la gestion du backend pour des solutions Web puissantes et polyvalentes"
-        }
-    ]
+    "skills_cards": {
+        "fr": [
+            {
+                "title": "Création de thème Wordpress",
+                "subtitle": "Mise en place de thèmes Wordpress personnalisés pour des sites Web uniques et attrayants"
+            },
+            {
+                "title": "Boutique en ligne à partir de zéro",
+                "subtitle": "Création d'une boutique en ligne complète, de la conception initiale à la mise en ligne, en passant par la gestion des produits et des paiements"
+            },
+            {
+                "title": "Modèle Figma en code",
+                "subtitle": "Conversion de designs Figma en code fonctionnel pour donner vie à des interfaces utilisateur interactives et conviviales"
+            },
+            {
+                "title": "Application Web FullStack - MERN",
+                "subtitle": "Développement complet d'applications Web, de la création du frontend à la gestion du backend pour des solutions Web puissantes et polyvalentes"
+            }
+        ],
+        "en": [
+            {
+                "title": "WordPress theme creation",
+                "subtitle": "Creating custom Wordpress themes from scratch for unique and attractive websites"
+            },
+            {
+                "title": "Online store from scratch",
+                "subtitle": "Creating a complete online store, from initial design to go live, including product and payment management"
+            },
+            {
+                "title": "Figma templates to code",
+                "subtitle": "Converting Figma designs into functional code to bring interactive, user-friendly user interfaces to life"
+            },
+            {
+                "title": "FullStack Web Application - MERN",
+                "subtitle": "Complete web application development, from frontend creation to backend management for powerful and versatile web solutions"
+            }
+        ]
+    }
 }

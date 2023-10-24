@@ -64,7 +64,7 @@ const Navbar = () => {
                     {LANGUAGES.map(({ code, label }) =>
                         code != currentLang ? (
                             <NavLink
-                                className="text-white bg-customBlack rounded-full py-1 px-2 block transition-colors hover:bg-orange"
+                                className="w-9 flex items-center justify-center text-white bg-customBlack rounded-full py-1 transition-colors hover:bg-orange"
                                 key={code}
                                 to={code !== "fr" ? code : "/"}
                             >

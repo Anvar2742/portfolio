@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const { i18n, t } = useTranslation();
     const initialForm = {
         user_name: "",
         user_email: "",
@@ -70,12 +72,12 @@ const Contact = () => {
         <section className=" pt-28 pb-36" id="contact">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className=" text-4xl font-semibold font-serif mb-7 text-center">
-                    Contactez-moi
+                    {t("home.contact.title")}
                 </h2>
                 {isSent ? (
                     <div className="max-w-xs mx-auto shadow-center rounded-2xl py-10 px-8">
                         <h3 className="text-2xl font-semibold mt-5s font-serif text-center">
-                            J'ai recu votre message, merci!
+                            {t("home.contact.msg_sent")}
                         </h3>
                     </div>
                 ) : (
@@ -118,12 +120,12 @@ const Contact = () => {
                         )}
                         <div>
                             <label className="block font-serif text-darkBlue text-lg">
-                                Votre nom *
+                                {t("home.contact.name")} *
                             </label>
                             <input
                                 type="text"
                                 name="user_name"
-                                placeholder="Votre nom"
+                                placeholder={t("home.contact.name")}
                                 className={`border-2 border-gray-400 rounded-lg w-full py-1 px-2 ${
                                     formErrors.user_name ? "border-red-400" : ""
                                 }`}
@@ -140,12 +142,12 @@ const Contact = () => {
                         </div>
                         <div>
                             <label className="block font-serif text-darkBlue text-lg">
-                                Votre mail *
+                                {t("home.contact.email")} *
                             </label>
                             <input
                                 type="email"
                                 name="user_email"
-                                placeholder="Votre mail"
+                                placeholder={t("home.contact.email")}
                                 className={`border-2 border-gray-400 rounded-lg w-full py-1 px-2 ${
                                     formErrors.user_email
                                         ? "border-red-400"
@@ -164,7 +166,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <label className="block font-serif text-darkBlue text-lg">
-                                Votre message
+                                {t("home.contact.msg")}
                             </label>
                             <textarea
                                 name="message"
@@ -173,7 +175,7 @@ const Contact = () => {
                                 }`}
                                 value={formData.message}
                                 onChange={handleChange}
-                                placeholder="Votre message"
+                                placeholder={t("home.contact.msg")}
                                 rows={5}
                             />
                             {formErrors.message ? (
@@ -193,7 +195,7 @@ const Contact = () => {
                             type="submit"
                             className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold  transition-all hover:-translate-y-1 hover:shadow-xl"
                         >
-                            Envoyer
+                            {t("home.contact.send")}
                             <svg
                                 width="13"
                                 height="13"
