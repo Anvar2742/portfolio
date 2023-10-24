@@ -27,6 +27,7 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        let isErr = false;
         const formDataKeys = Object.keys(formData);
         Object.values(formData).forEach((el, i) => {
             if (!el && formDataKeys[i] !== "message") {
@@ -36,9 +37,11 @@ const Contact = () => {
                         [formDataKeys[i]]: "Ce champ est obligatoire",
                     };
                 });
+                isErr = true;
                 return;
             }
         });
+        if (isErr) return;
         setIsLoading(true);
 
         emailjs
