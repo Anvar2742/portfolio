@@ -7,8 +7,10 @@ import Skills from "../components/Skills";
 import Work from "../components/Work";
 import heroBg from "./../assets/hero-bg.webp";
 import scrollHero from "./../assets/hero-scroll.svg";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+    const { i18n, t } = useTranslation();
     return (
         <>
             <section
@@ -20,7 +22,7 @@ const Home = () => {
             >
                 <div className="maxW-5xl mx-auto px-4">
                     <h1 className=" font-serif text-4xl sm:text-8xl text-darkBlue text-center">
-                        Salut, c'est Anvar
+                        {t("title")}
                     </h1>
                     <p className="sm:leading-normal text-xl sm:text-5xl text-center mt-4 mb-20">
                         Je suis{" "}
