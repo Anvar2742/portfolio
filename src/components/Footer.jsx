@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ScrollBtn from "./ScrollBtn";
-import footerBg from "./../assets/footer.jpg";
+import footerBg from "./../assets/footer.webp";
 import toTop from "./../assets/toTop.svg";
 import ContactInfo from "./ContactInfo";
 
@@ -27,7 +27,7 @@ const Footer = () => {
                     <ContactInfo />
                     <div className="flex flex-col sm:flex-row gap-5 p-5 items-center bg-white rounded-xl">
                         <p className="font-serif">
-                            Contactez moi 
+                            Je serais ravi de discuter de ma candidature
                         </p>
                         <button
                             onClick={handleCopy}

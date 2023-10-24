@@ -1,5 +1,5 @@
 import React from "react";
-import collab from "./../assets/collab.jpg";
+import collab from "./../assets/collab.webp";
 
 const Collab = () => {
     return (

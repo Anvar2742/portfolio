@@ -51,7 +51,7 @@ const About = () => {
                     </div>
                     <div className=" rounded-3xl overflow-hidden sm:w-2/5">
                         <img
-                            src="./../ava_g.jpg"
+                            src="./../ava_g.webp"
                             alt=""
                             className="w-full h-full object-cover"
                         />

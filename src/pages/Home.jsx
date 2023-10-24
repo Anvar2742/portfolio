@@ -1,11 +1,11 @@
 import About from "../components/About";
-import Collab from "../components/Collab";
+// import Collab from "../components/Collab";
+// import ContactInfo from "../components/ContactInfo";
 import Contact from "../components/Contact";
-import ContactInfo from "../components/ContactInfo";
 import ScrollBtn from "../components/ScrollBtn";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
-import heroBg from "./../assets/hero-bg.png";
+import heroBg from "./../assets/hero-bg.webp";
 import scrollHero from "./../assets/hero-scroll.svg";
 
 const Home = () => {

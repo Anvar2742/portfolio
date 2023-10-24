@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "./work/reduced/booriva_pc.jpg",
+        "img": "./work/booriva_pc.webp",
         "title": "Booriva - eCommerce creation",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "img": "./work/reduced/mrcharge_pc.jpg",
+        "img": "./work/mrcharge_pc.webp",
         "title": "MrCharge wordpress blog",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "img": "./work/reduced/theworldmag_pc.jpg",
+        "img": "./work/theworldmag_pc.webp",
         "title": "TheWorldMag - magazine en ligne",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "img": "./work/reduced/cukr_pc.jpg",
+        "img": "./work/cukr_pc.webp",
         "title": "Cukr - platforme d'actualites",
         "primary_color": "#F5F3FF",
         "sec_color": "#E0DBFF",
