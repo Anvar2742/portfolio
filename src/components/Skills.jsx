@@ -27,7 +27,7 @@ const Skills = () => {
         <section className="pt-28 pb-24 mb-16" id="skills" ref={skillWrap}>
             <div className="max-w-5xl mx-auto px-4" data-scroll-section>
                 <h2 className="text-center text-xl uppercase font-bold mb-14 sm:mb-24 h2">
-                    Competences
+                    COMPÉTENCES
                 </h2>
                 <div
                     className="grid sm:grid-cols-2 gap-y-20 smgap-4 items-start"

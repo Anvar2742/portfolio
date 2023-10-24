@@ -23,11 +23,11 @@ const Footer = () => {
         >
             <div className="max-w-5xl mx-auto px-4">
                 <ScrollBtn scrollSrc={toTop} href="#contact" isTop={true} />
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col sm:flex-row items-center justify-between">
                     <ContactInfo />
-                    <div className="flex gap-5 p-5 items-center bg-white rounded-xl">
+                    <div className="flex flex-col sm:flex-row gap-5 p-5 items-center bg-white rounded-xl">
                         <p className="font-serif">
-                            Interested in working together? Drop me a line
+                            Contactez moi 
                         </p>
                         <button
                             onClick={handleCopy}

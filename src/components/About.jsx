@@ -18,7 +18,7 @@ const About = () => {
                             compréhension des principes de développement web,
                             utilisant un large éventail de technologies, de
                             frameworks et d'outils de programmation pour créer
-                            des sites Web robustes, conviviaux et réactifs.
+                            des sites web conviviaux et réactifs.
                             <br /> <br />
                             Fort d'une expérience dans la réalisation de projets
                             de haute qualité, je maîtrise la conception UI/UX,
