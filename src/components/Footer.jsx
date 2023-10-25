@@ -55,7 +55,7 @@ const Footer = () => {
                                 <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
                             </svg>
                             {isCopied
-                                ? t("home.footer.copy_btn")
+                                ? t("home.footer.copied_txt")
                                 : t("home.footer.copy_btn")}
                         </button>
                     </div>
