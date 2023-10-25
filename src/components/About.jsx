@@ -1,8 +1,19 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { ScrollToPlugin, gsap } from "gsap/all";
 
 const About = () => {
     const { i18n, t } = useTranslation();
+    gsap.registerPlugin(ScrollToPlugin);
+    const scrollTo = (e, href) => {
+        e.preventDefault();
+
+        gsap.to(window, {
+            scrollTo: href,
+            duration: 1,
+        });
+    };
+
     return (
         <section className="pt-28 pb-24 bg-grayBlue mb-16" id="about">
             <div className="max-w-5xl mx-auto px-4" data-scroll-section>
@@ -21,11 +32,11 @@ const About = () => {
                             {t("home.about.2p")}
                         </p>
                         <a
-                            href="./CV.pdf"
-                            target="_blank"
+                            href="#contact"
+                            onClick={(e) => scrollTo(e, "#contact")}
                             className="mx-auto py-4 px-11 inline-flex items-center justify-center gap-1 text-white bg-orange rounded-xl font-bold  transition-all hover:-translate-y-1 hover:shadow-xl"
                         >
-                            Ouvrir le CV
+                            {t("home.about.contact_me")}
                             <svg
                                 width="13"
                                 height="13"

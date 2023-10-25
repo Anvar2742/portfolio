@@ -71,9 +71,6 @@ const Contact = () => {
     return (
         <section className=" pt-28 pb-36" id="contact">
             <div className="max-w-5xl mx-auto px-4">
-                <h2 className=" text-4xl font-semibold font-serif mb-7 text-center">
-                    {t("home.contact.title")}
-                </h2>
                 {isSent ? (
                     <div className="max-w-xs mx-auto shadow-center rounded-2xl py-10 px-8">
                         <h3 className="text-2xl font-semibold mt-5s font-serif text-center">
@@ -86,6 +83,9 @@ const Contact = () => {
                         onSubmit={sendEmail}
                         className={` max-w-xs mx-auto grid gap-4 relative`}
                     >
+                        <h2 className=" text-4xl font-semibold font-serif mb-7 text-center">
+                            {t("home.contact.title")}
+                        </h2>
                         {isLoading ? (
                             <div className="absolute top-0 left-0 bg-white bg-opacity-80 w-full h-full flex items-center justify-center">
                                 <svg
