@@ -29,7 +29,7 @@ const NavMenu = () => {
         gsap.to(window, {
             scrollTo: {
                 y: href,
-                offsetY: 200,
+                offsetY: 150,
             },
             duration: 1,
         });
@@ -39,7 +39,7 @@ const NavMenu = () => {
         const rect = el.getBoundingClientRect();
         const height =
             window.innerHeight || document.documentElement.clientHeight;
-        return rect.top >= 0 && rect.top + 200 <= height;
+        return rect.top >= 0 && rect.top + 150 <= height;
     };
 
     // Function to update the active menu item based on scroll position
@@ -62,13 +62,13 @@ const NavMenu = () => {
 
     return (
         <nav>
-            <ul className="flex gap-4 xs:mt-0">
+            <ul className="flex sm:flex-row flex-col gap-4 xs:mt-0 mb-5 sm:mb-0">
                 {menu.map((el) => {
                     return (
                         <li key={el.id}>
                             <a
                                 href={`#${el.id}`}
-                                className={`hover:underline ${
+                                className={`hover:underline text-xl ${
                                     activeMenuItem === el.id ? "font-bold" : ""
                                 }`}
                                 onClick={(e) => scrollTo(e, `#${el.id}`)}

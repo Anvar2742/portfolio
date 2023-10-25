@@ -16,7 +16,7 @@ const SkillCards = () => {
                     if (skillRef.current) {
                         ScrollTrigger.create({
                             trigger: skillRef.current,
-                            start: "top 30%",
+                            start: "top 50%",
                             onEnter: () => {
                                 setIsActive(true);
                             },

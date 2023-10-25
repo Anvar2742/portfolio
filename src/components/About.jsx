@@ -23,7 +23,7 @@ const About = () => {
                 >
                     {t("home.about.title")}
                 </h2>
-                <div className="flex flex-col sm:flex-row gap-14">
+                <div className="flex flex-col items-center sm:flex-row gap-14">
                     <div className="sm:w-3/5">
                         <p className="text-lg mb-7">
                             {t("home.about.jesdfsavec") + " "}
