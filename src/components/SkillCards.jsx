@@ -9,7 +9,7 @@ const SkillCards = () => {
     gsap.registerPlugin(ScrollTrigger);
     return (
         <div className="grid gap-10 px-5">
-            {skills.skills_cards[i18n.language].map((skill, i) => {
+            {skills.skills_cards[i18n.language || "fr"]?.map((skill, i) => {
                 const [isActive, setIsActive] = useState(false);
                 const skillRef = useRef();
                 useEffect(() => {
