@@ -68,7 +68,7 @@ const NavMenu = () => {
                         <li key={el.id}>
                             <a
                                 href={`#${el.id}`}
-                                className={`hover:underline text-xl ${
+                                className={`hover:underline text-xl sm:text-base ${
                                     activeMenuItem === el.id ? "font-bold" : ""
                                 }`}
                                 onClick={(e) => scrollTo(e, `#${el.id}`)}
