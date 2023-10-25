@@ -4,7 +4,7 @@ import collab from "./../assets/collab.webp";
 const Collab = () => {
     return (
         <section className="pt-28 pb-24" id="cv">
-            <div className="maxW-5xl mx-auto px-4" data-scroll-section>
+            <div className="maxW-5xl mx-auto px-4">
                 <div
                     style={{
                         "--collab-bg": `url(${collab})`,

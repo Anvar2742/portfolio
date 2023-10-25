@@ -4,9 +4,9 @@ import works from "./../work.json";
 const Work = () => {
     const { i18n, t } = useTranslation();
     return (
-        <section data-scroll-section className="pt-28 pb-24" id="work">
+        <section className="pt-28 pb-24">
             <div className="maxW-5xl mx-auto px-4">
-                <h2 className="text-center text-xl uppercase font-bold mb-24 h2">
+                <h2 className="text-center text-xl uppercase font-bold mb-24 h2" id="work">
                     portfolio
                 </h2>
                 <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-10">

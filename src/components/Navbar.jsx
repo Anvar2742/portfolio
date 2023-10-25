@@ -45,7 +45,7 @@ const Navbar = () => {
 
     // Render the Navbar
     return (
-        <header className="py-5" id="header" data-scroll-section>
+        <header className="py-5 fixed w-full bg-white shadow-sm z-40">
             <div className="max-w-5xl mx-auto px-6 xs:flex items-center justify-between gap-1">
                 <div className="flex items-center justify-between">
                     <Link

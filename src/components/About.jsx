@@ -15,9 +15,12 @@ const About = () => {
     };
 
     return (
-        <section className="pt-28 pb-24 bg-grayBlue mb-16" id="about">
-            <div className="max-w-5xl mx-auto px-4" data-scroll-section>
-                <h2 className="text-center text-xl uppercase font-bold mb-14 sm:mb-24 h2">
+        <section className="pt-28 pb-24 bg-grayBlue mb-16">
+            <div className="max-w-5xl mx-auto px-4">
+                <h2
+                    className="text-center text-xl uppercase font-bold mb-14 sm:mb-24"
+                    id="about"
+                >
                     {t("home.about.title")}
                 </h2>
                 <div className="flex flex-col sm:flex-row gap-14">

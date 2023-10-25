@@ -17,7 +17,6 @@ const Footer = () => {
     };
     return (
         <footer
-            data-scroll-section
             style={{
                 "--footer-bg": `url(${footerBg})`,
             }}
