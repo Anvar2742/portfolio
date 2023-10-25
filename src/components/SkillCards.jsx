@@ -38,7 +38,7 @@ const SkillCards = () => {
                                     : "before:-rotate-3"
                                 : ""
                         }
-                                    hover:before:rotate-0 hover:before:translate-y-0`}
+                        sm:hover:before:rotate-0 sm:hover:before:translate-y-0`}
                     >
                         <p className="text-xl font-bold opacity-70 z-10 relative">
                             {i + 1}
