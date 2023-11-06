@@ -30,6 +30,7 @@ const Navbar = () => {
 
     // Check if a language is specified in the URL, set the currentLang state
     useEffect(() => {
+        console.log(lang);
         if (lang) {
             setCurrentLang(lang);
         } else {
