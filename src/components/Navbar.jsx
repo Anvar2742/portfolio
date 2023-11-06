@@ -36,11 +36,12 @@ const Navbar = () => {
         } else {
             setCurrentLang("fr");
         }
-    }, [location.pathname]);
+    }, [location.pathname, lang]);
 
     // Change the language and handle loading state
     useEffect(() => {
         i18n.changeLanguage(currentLang);
+        console.log(currentLang);
         if (currentLang === i18n.language) {
             setIsLoading(false);
         }
