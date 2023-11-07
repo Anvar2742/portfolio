@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <Work />
+            {/* <Work /> */}
 
             <div className="flex gap-1 mt-10 mb-20 overflow-hidden">
                 <p className="text-2xl sm:text-5xl font-medium sabsolute flex left-0 whitespace-nowrap animate-running">
