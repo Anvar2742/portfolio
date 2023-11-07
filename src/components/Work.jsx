@@ -23,7 +23,7 @@ const Work = () => {
                                 className={`bg-[var(--work-color)] py-8 sm:py-16 px-4 sm:px-14 rounded-xl group`}
                             >
                                 <figure
-                                    className={`rounded-2xl bg-[--work-color-sec] pt-8 sm:pt-16 px-6 sm:px-14 max-h-80 overflow-hidden h-full`}
+                                    className={`rounded-2xl bg-[--work-color-sec] pt-8 sm:pt-16 px-6 sm:px-14 max- h-80 overflow-hidden h-fulls`}
                                 >
                                     <img
                                         src={work.img}
